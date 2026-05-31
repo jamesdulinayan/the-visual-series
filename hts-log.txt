@@ -1,0 +1,38 @@
+HTTrack3.49-2 launched on Mon, 01 Jun 2026 01:03:15 at https://fluid-demo-vivian.squarespace.com/?password=demo +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://fluid-demo-vivian.squarespace.com/?password=demo -O "/Users/macmini/Documents/Websites/visual" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+01:05:33	Warning: 	Moved Temporarily for https://use.typekit.net/
+01:05:33	Warning: 	File has moved from https://use.typekit.net/ to https://fonts.adobe.com/
+01:05:34	Warning: 	Moved Permanently for https://p.typekit.net/
+01:05:34	Warning: 	File has moved from https://p.typekit.net/ to https://typekit.com/
+01:05:35	Error: 	"Not Found" (404) at link https://fonts.gstatic.com/ (from https://fluid-demo-vivian.squarespace.com/?password=demo)
+01:06:50	Warning: 	HTML file (3150107 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/
+01:07:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-refracted-circles.js
+01:07:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-liquid.js
+01:07:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/9882.js
+01:07:04	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/8018.js
+01:07:05	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-film-grain.js
+01:07:05	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/4df0bd5e-8e61-410a-a35e-685b3b5718b0_787/website.components.button.visitor.js
+01:07:06	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/748.js
+01:07:07	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-refracted-lines.js
+01:07:07	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.visitor.js
+01:07:09	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.socialLinks/75a0be2c-a05c-4d90-9e93-2d3bd26ca8a1_395/website.components.socialLinks.visitor.js
+01:07:10	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.visitor.js
+01:07:10	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-parallax.js
+01:07:11	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.shape/24757eae-7c59-429e-a7e1-908c4117def8_1012/website.components.shape.visitor.js
+01:07:12	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.form/9454c00c-04b9-413e-aae5-6e6d0537dca7_789/website.components.form.visitor.js
+01:07:25	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.acuity/87c09a65-f7e7-4733-a11c-d441859445c6_345/website.components.acuity.visitor.js
+01:09:10	Warning: 	HTML file (775679 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/gallery/clara-theo
+01:09:12	Warning: 	HTML file (1127503 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/gallery/amara-julian
+01:09:16	Warning: 	HTML file (1535879 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/home
+01:09:20	Warning: 	HTML file (174967 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/blog/blog-post-title-one
+01:09:24	Warning: 	HTML file (724151 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/blog/blog-post-title-three
+01:09:26	Warning: 	HTML file (767712 bytes) retransferred due to lack of cache: https://fluid-demo-vivian.squarespace.com/blog?author=5d1f60766834dd00017112f8
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 14 seconds : 156 links scanned, 170 files written (74423792 bytes overall) [44768995 bytes received at 119703 bytes/sec], 32129706 bytes transferred using HTTP compression in 93 files, ratio 9%, 1.9 requests per connection
+(1 errors, 26 warnings, 0 messages)

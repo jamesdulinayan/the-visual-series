@@ -1,0 +1,13 @@
+.sqs-block[data-definition-name="website.components.acuity"] .sqs-block-content {
+  transition: opacity 0.3s ease-in;
+}
+.sqs-block[data-definition-name="website.components.acuity"] .sqs-block-content iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  min-height: 680px;
+}
+.sqs-block[data-definition-name="website.components.acuity"] .sqs-block-content.is-rendering {
+  opacity: 0.1;
+}
+
