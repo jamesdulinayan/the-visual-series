@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-fluid-demo-vivian.squarespace.com	TRUE	/	FALSE	1999999999	crumb	BQNcBWWel4u+ODdmOWNkZGJiMTg1YjJiZGNjYzA2NDRhMjM4NDQw
-fluid-demo-vivian.squarespace.com	TRUE	/	FALSE	1999999999	Locked	hwmKSSLVbYw/r1IceHotoSzbcFCASiLDUmwNTb+qBIM=
-
