@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>About | James Dulinayan</title>
+
+    <meta name="author" content="James Dulinayan">
+    <meta name="description" content="James Dulinayan">
+    <meta name="keywords" content="James Dulinayan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../fonts.googleapis.com/css2fb67.css?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/dht2lod.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="page-about">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+    <header class="index-header">
+        <div class="index-logo-col">
+            <a href="/">
+                <img src="img/site-logo.png" alt="James Dulinayan" class="index-logo-img" draggable="false">
+            </a>
+        </div>
+        <div class="index-controls-col">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="index-hamburger" class="index-hamburger-btn" aria-label="Toggle Navigation Menu">
+                <div class="hamburger-inner">
+                    <span class="hamburger-line line-1"></span>
+                    <span class="hamburger-line line-2"></span>
+                    <span class="hamburger-line line-3"></span>
+                </div>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Custom Full-Page Overlay Menu -->
+    <div id="index-menu-overlay" class="index-menu-overlay grain">
+        <div class="index-menu-bg-grain"></div>
+        <div class="index-menu-content">
+            <!-- Navigation Links -->
+            <nav class="index-menu-nav">
+                <ul class="index-menu-list">
+                    <li class="index-menu-item" style="--item-index: 1;">
+                        <a href="/" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="Home">Home</span>
+                        </a>
+                    </li>
+                    <li class="index-menu-item" style="--item-index: 2;">
+                        <a href="/about" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="About">About</span>
+                        </a>
+                    </li>
+                    <li class="index-menu-item has-sparkle" style="--item-index: 3;">
+                        <a href="/projects" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="Projects">Projects</span>
+                        </a>
+                    </li>
+                    <li class="index-menu-item" style="--item-index: 4;">
+                        <a href="/contact" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="Contact">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Bottom Metadata Rows -->
+            <div class="index-menu-meta-row">
+                <div class="index-menu-meta-col">
+                    <span class="cta-footer__col-label">Social</span>
+                    <ul class="cta-footer__icon-row">
+                        <li>
+                            <a href="https://www.facebook.com/jamesdulinayan" target="_blank"
+                                class="cta-footer__icon-link" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jamesdulinayan/" target="_blank"
+                                class="cta-footer__icon-link" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ph.linkedin.com/in/jamesdulinayan" target="_blank"
+                                class="cta-footer__icon-link" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="index-menu-meta-col">
+                    <span class="cta-footer__col-label">Let's Connect
+                    </span>
+                    <a href="mailto:james.dulinayan@gmail.com"
+                        class="cta-footer__col-value">jamesdulinayan@gmail.com</a>
+                </div>
+                <div class="index-menu-meta-col">
+                    <span class="cta-footer__col-label">Contact</span>
+                    <a href="tel:+639563620905" class="cta-footer__col-value">+63 956 362 0905</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="page" class="about-page" data-barba="container">
+
+        <div id="content" class="page-content">
+
+            <section class="section section-creative creative-scrollable grain">
+
+                <div class="wrapper-full creative-layout" style="margin: 0;">
+
+                    <div class="creative-layout__row">
+                        <div class="c-col-6 creative-copy-col"
+                            style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; margin-bottom: 0; position: relative; z-index: 3;">
+
+                            <h1 class="creative-copy-title">About Me</h1>
+
+                            <h2 class="creative-copy-text">
+                                I am a creator based in the Philippines with an academic background in Information
+                                Technology and Web Development.<br><br>
+                                My work is built around the integration of technology and design. Instead of
+                                treating development and design as separate paths, I combine them to construct seamless
+                                web platforms from the ground up. I focus on turning complex technical specifications
+                                into polished, highly accessible products that deliver value to users.
+                            </h2>
+
+                            <!-- Services Section -->
+                            <div class="skills-grid">
+                                <div data-anim="true" class="alioth-services style_2">
+                                    <div class="services">
+                                        <div class="service">
+                                            <div class="post-title">
+                                                <h3>Web Development</h3>
+                                            </div>
+                                            <div class="service-toggle">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="service-wrap">
+                                                <div class="service-cont" style="color: rgba(42, 42, 42, 0.812)">
+                                                    <h2 class="creative-copy-text">By utilizing modern development
+                                                        practices, I ensure that every digital interface is fully
+                                                        responsive, accessible, and optimized across all user
+                                                        touchpoints. My goal is to build interfaces that are both highly
+                                                        performant and scalable in today's digital landscape.</h2>
+                                                    <div
+                                                        style="margin-top: 40px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 8px;">
+                                                        <span class="meta-pill">HTML</span><span
+                                                            class="meta-pill">CSS</span><span
+                                                            class="meta-pill">JavaScript</span><span
+                                                            class="meta-pill">jQuery</span><span
+                                                            class="meta-pill">PHP</span><span
+                                                            class="meta-pill">WordPress</span><span
+                                                            class="meta-pill">Elementor</span><span
+                                                            class="meta-pill">WooCommerce</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service">
+                                            <div class="post-title">
+                                                <h3>Motion &amp; Graphics Design</h3>
+                                            </div>
+                                            <div class="service-toggle">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="service-wrap">
+                                                <div class="service-cont" style="color: rgba(42, 42, 42, 0.812)">
+                                                    <h2 class="creative-copy-text">I create motion and graphic designs
+                                                        that elevate storytelling and captivate audiences. By combining
+                                                        dynamic movement, clean design principles, and seamless audio
+                                                        synchronization, I build immersive visual narratives that convey
+                                                        complex ideas with high impact and clarity.</h2>
+                                                    <div
+                                                        style="margin-top: 40px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 8px;">
+                                                        <span class="meta-pill">Adobe Creative Suite</span><span
+                                                            class="meta-pill">LottieFiles</span><span
+                                                            class="meta-pill">Logo Animation</span><span
+                                                            class="meta-pill">Kinetic Typography</span><span
+                                                            class="meta-pill">Animated Posters</span><span
+                                                            class="meta-pill">Illustration</span><span
+                                                            class="meta-pill">Brand Design</span><span
+                                                            class="meta-pill">Print Design</span><span
+                                                            class="meta-pill">Layout Design</span><span
+                                                            class="meta-pill">Social Media Ads</span><span
+                                                            class="meta-pill">Thumbnails</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="service">
+                                            <div class="post-title">
+                                                <h3>Video Editing</h3>
+                                            </div>
+                                            <div class="service-toggle">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="service-wrap">
+                                                <div class="service-cont" style="color: rgba(42, 42, 42, 0.812)">
+                                                    <h2 class="creative-copy-text">I assemble raw footage, sound design,
+                                                        and custom visual effects into high-production video content.
+                                                        Focusing on precise pacing, modern transitions, and meticulous
+                                                        color grading, I deliver seamless edits that maintain viewer
+                                                        engagement and amplify the underlying story.</h2>
+                                                    <div
+                                                        style="margin-top: 40px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 8px;">
+                                                        <span class="meta-pill">Adobe Creative Suite</span><span
+                                                            class="meta-pill">DaVinci Resolve</span><span
+                                                            class="meta-pill">Color Grading</span><span
+                                                            class="meta-pill">Sound Design</span><span
+                                                            class="meta-pill">Transitions</span><span
+                                                            class="meta-pill">VFX</span><span
+                                                            class="meta-pill">Subtitling</span><span
+                                                            class="meta-pill">Cinematic Editing</span><span
+                                                            class="meta-pill">Audio Post-Production</span><span
+                                                            class="meta-pill">Video Podcasts</span><span
+                                                            class="meta-pill">Advertisements</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: Media -->
+                        <div class="c-col-6 creative-media-col"
+                            style="box-sizing: border-box; margin-bottom: 0; padding: 0; position: relative; z-index: 1;">
+
+                            <div class="container"
+                                style="position: relative; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; overflow: hidden; container-type: size;">
+
+                                <div class="about-hero-composition"
+                                    style="position: relative; width: 100%; height: 100%; overflow: hidden;">
+
+                                    <img src="img/about-light.jpg" alt="James Dulinayan" class="about-img-light"
+                                        draggable="false">
+                                    <img src="img/about-dark.jpg" alt="James Dulinayan" class="about-img-dark"
+                                        draggable="false">
+
+                                    <!-- Floating Tooltips -->
+                                    <div class="tooltip-wrapper float-dev-anim">
+                                        <div class="about-tooltip tooltip-developer">
+                                            <span class="tooltip-text">Developer</span>
+                                            <svg class="tooltip-arrow-svg arrow-dev" width="14" height="14"
+                                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                style="position: absolute; right: -15px; top: -13px; transform: rotate(-35deg);">
+                                                <path d="M 1.5,1.5 L 14.5,8 L 1.5,14.5 L 5.5,8 Z" stroke-width="1" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip-wrapper float-des-anim">
+                                        <div class="about-tooltip tooltip-designer">
+                                            <span class="tooltip-text">Designer</span>
+                                            <svg class="tooltip-arrow-svg arrow-des" width="14" height="14"
+                                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                style="position: absolute; left: -15px; top: -13px; transform: rotate(-145deg);">
+                                                <path d="M 1.5,1.5 L 14.5,8 L 1.5,14.5 L 5.5,8 Z" stroke-width="1" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/barba.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script src='https://draggabilly.desandro.com/draggabilly.pkgd.js'></script>
+    <script src="js/draggable-div-with-touch.js"></script>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        } else {
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            document.documentElement.classList.toggle('dark');
+
+            if (body.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            }
+        });
+
+        // Custom Hamburger and Full-Page Overlay Menu Toggling with Scroll Lock
+        const hamburgerBtn = document.getElementById('index-hamburger');
+        const menuOverlay = document.getElementById('index-menu-overlay');
+        const menuLinks = document.querySelectorAll('.index-menu-link');
+
+        function preventDefault(e) {
+            e.preventDefault();
+        }
+
+        const wheelOpt = { passive: false };
+        const wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+        function openMenu() {
+            hamburgerBtn.classList.add('is-active');
+            menuOverlay.classList.add('is-open');
+            body.classList.add('menu-open-lock');
+            document.documentElement.classList.add('menu-open-lock');
+
+            // Intercept scroll actions (mousewheel, touchmove, keys)
+            window.addEventListener('DOMMouseScroll', preventDefault, false);
+            window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+            window.addEventListener('touchmove', preventDefault, wheelOpt);
+        }
+
+        function closeMenu() {
+            hamburgerBtn.classList.remove('is-active');
+            menuOverlay.classList.remove('is-open');
+            body.classList.remove('menu-open-lock');
+            document.documentElement.classList.remove('menu-open-lock');
+
+            // Restore standard scrolling
+            window.removeEventListener('DOMMouseScroll', preventDefault, false);
+            window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+            window.removeEventListener('touchmove', preventDefault, wheelOpt);
+        }
+
+        function toggleMenu() {
+            const isOpen = menuOverlay.classList.contains('is-open');
+            if (isOpen) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        }
+
+        hamburgerBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close menu when a link is clicked
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+
+
+
+
+        // Close menu on Escape key press
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && menuOverlay.classList.contains('is-open')) {
+                closeMenu();
+            }
+        });
+
+        // Header scroll detection - hide on scroll down, show on scroll up
+        const header = document.querySelector('.index-header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                // Scrolling down - hide header
+                header.classList.add('hidden');
+            } else {
+                // Scrolling up - show header
+                header.classList.remove('hidden');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+        // Interactive Mouse-Movement Parallax Effect for About Tooltips
+        const mediaContainer = document.querySelector('.about-hero-composition');
+        const tooltipDev = document.querySelector('.tooltip-developer');
+        const tooltipDes = document.querySelector('.tooltip-designer');
+
+        if (mediaContainer && tooltipDev && tooltipDes) {
+            mediaContainer.addEventListener('mousemove', (e) => {
+                const rect = mediaContainer.getBoundingClientRect();
+
+                // Get normalized coordinates [-0.5, 0.5] relative to media container
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+                // Move tooltips dynamically in perfect synchronization (same speed, same displacement)
+                gsap.to(tooltipDev, {
+                    x: x * 20,
+                    y: y * 20,
+                    duration: 1.5,
+                    ease: 'power2.out',
+                    overwrite: 'auto'
+                });
+
+                gsap.to(tooltipDes, {
+                    x: x * 20,
+                    y: y * 20,
+                    duration: 1.5,
+                    ease: 'power2.out',
+                    overwrite: 'auto'
+                });
+            });
+
+            // Smoothly return tooltips to center when mouse leaves the image
+            mediaContainer.addEventListener('mouseleave', () => {
+                gsap.to([tooltipDev, tooltipDes], {
+                    x: 0,
+                    y: 0,
+                    duration: 1.5,
+                    ease: 'power2.out',
+                    overwrite: 'auto'
+                });
+            });
+        }
+
+        // Prevent right-click context menu specifically on about page hero images
+        document.addEventListener('contextmenu', (e) => {
+            const isAboutImg = e.target.classList.contains('about-img-light') || e.target.classList.contains('about-img-dark');
+            if (isAboutImg) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>

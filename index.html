@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Home | James Dulinayan</title>
+
+    <meta name="author" content="Pe Themes">
+    <meta name="description" content="Creative Portfolio & Agency Template">
+    <meta name="keywords" content="portfolio, agency, personal, creative">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../fonts.googleapis.com/css2fb67.css?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+
+    <header class="index-header">
+        <div class="index-logo-col">
+            <a href="/">
+                <img src="img/site-logo.png" alt="James Dulinayan" class="index-logo-img" draggable="false">
+            </a>
+        </div>
+        <div class="index-controls-col">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="index-hamburger" class="index-hamburger-btn" aria-label="Toggle Navigation Menu">
+                <div class="hamburger-inner">
+                    <span class="hamburger-line line-1"></span>
+                    <span class="hamburger-line line-2"></span>
+                    <span class="hamburger-line line-3"></span>
+                </div>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Custom Full-Page Overlay Menu -->
+    <div id="index-menu-overlay" class="index-menu-overlay">
+        <div class="index-menu-content">
+            <!-- Navigation Links -->
+            <nav class="index-menu-nav">
+                <ul class="index-menu-list">
+                    <li class="index-menu-item" style="--item-index: 1;">
+                        <a href="/" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="Home">Home</span>
+                        </a>
+                    </li>
+                    <li class="index-menu-item" style="--item-index: 2;">
+                        <a href="/about" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="About">About</span>
+                        </a>
+                    </li>
+                    <li class="index-menu-item has-sparkle" style="--item-index: 3;">
+                        <a href="/projects" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="Projects">Projects</span>
+                        </a>
+                    </li>
+                    <li class="index-menu-item" style="--item-index: 4;">
+                        <a href="/contact" class="index-menu-link">
+                            <span class="index-menu-text" data-hover="Contact">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Bottom Metadata Rows -->
+            <div class="index-menu-meta-row">
+                <div class="index-menu-meta-col">
+                    <span class="cta-footer__col-label">Social</span>
+                    <ul class="cta-footer__icon-row">
+                        <li>
+                            <a href="https://www.facebook.com/jamesdulinayan" target="_blank"
+                                class="cta-footer__icon-link" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jamesdulinayan/" target="_blank"
+                                class="cta-footer__icon-link" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ph.linkedin.com/in/jamesdulinayan" target="_blank"
+                                class="cta-footer__icon-link" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="index-menu-meta-col">
+                    <span class="cta-footer__col-label">Let's Connect
+                    </span>
+                    <a href="mailto:james.dulinayan@gmail.com"
+                        class="cta-footer__col-value">jamesdulinayan@gmail.com</a>
+                </div>
+                <div class="index-menu-meta-col">
+                    <span class="cta-footer__col-label">Contact</span>
+                    <a href="tel:+639563620905" class="cta-footer__col-value">+63 956 362 0905</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="page" data-barba="container">
+
+        <div id="content" class="page-content">
+
+
+            <div class="section section-creative creative-100vh">
+
+
+                <div class="wrapper-full creative-layout" style="margin: 0;">
+
+                    <div class="creative-layout__row">
+                        <div class="c-col-6 creative-copy-col"
+                            style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; margin-bottom: 0; position: relative; z-index: 3;">
+
+                            <h1 class="creative-copy-title">
+                                Bringing Your Vision <img src="img/eyes.gif" alt="eyes" draggable="false"
+                                    style="height: 0.5em; vertical-align: middle; margin-bottom: 10px;"> To Life
+                                <img src="img/circle.gif" alt="circle" draggable="false"
+                                    style="height: 0.85em; vertical-align: middle; margin-bottom: 10px;">
+                                Through Design And Development
+                                <img src="img/balls.gif" alt="balls" draggable="false"
+                                    style="height: 0.8em; vertical-align: middle; margin-bottom: 10px;">
+                                Creating Digital Experiences
+                            </h1>
+                            <h2 class="creative-copy-text">
+
+                                Driven by creativity and technical curiosity, I craft immersive, highly interactive
+                                websites and modern visual designs that elevate brands and engage audiences.
+                            </h2>
+
+
+                        </div>
+
+                        <div class="c-col-6 creative-media-col"
+                            style="box-sizing: border-box; margin-bottom: 0; padding: 0; position: relative; z-index: 1;">
+
+                            <div class="container" style="height: 100%; position: relative;">
+                                <img src="img/me-day.png" alt="James" class="center-me-img me-day-img"
+                                    draggable="false">
+                                <img src="img/me-night.png" alt="James" class="center-me-img me-night-img"
+                                    draggable="false">
+                                <img src="img/me-main.png" alt="James" class="center-me-img me-main-img"
+                                    draggable="false">
+                                <a href="/about" class="draggableA"></a>
+                                <a href="https://drive.google.com/file/d/1Qzk02V8nwmks4UAddq4EGIJK_uIf6kUM/view?usp=sharing"
+                                    target="_blank" class="draggableB"></a>
+                                <a href="/projects?filter=web-development" class="draggableC"></a>
+                                <a href="/projects?filter=video-editing" class="draggableD"></a>
+                                <a href="/projects?filter=motion-graphics" class="draggableE"></a>
+                                <a href="/contact" class="draggableF"></a>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <!--
+                    <footer class="cta-footer" aria-label="Contact call to action">
+                        <div class="cta-footer__inner cta-footer__inner--3col">
+                            <div class="cta-footer__col">
+                                <span class="cta-footer__col-label">Social</span>
+                                <ul class="cta-footer__icon-row">
+                                    <li>
+                                        <a href="https://www.facebook.com/jamesdulinayan" target="_blank"
+                                            class="cta-footer__icon-link" aria-label="Facebook">
+                                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/jamesdulinayan/" target="_blank"
+                                            class="cta-footer__icon-link" aria-label="Instagram">
+                                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ph.linkedin.com/in/jamesdulinayan" target="_blank"
+                                            class="cta-footer__icon-link" aria-label="LinkedIn">
+                                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cta-footer__col">
+                                <span class="cta-footer__col-label">Let's Connect</span>
+                                <a class="cta-footer__col-value"
+                                    href="mailto:james.dulinayan@gmail.com">jamesdulinayan@gmail.com</a>
+                            </div>
+                            <div class="cta-footer__col">
+                                <span class="cta-footer__col-label">Contact</span>
+                                <a class="cta-footer__col-value" href="tel:+639563620905">+63 956 362 0905</a>
+                            </div>
+                        </div>
+                    </footer>
+-->
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/barba.js"></script>
+        <script src="js/locomotive-scroll.min.js"></script>
+        <script src="js/gsap.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <script src='https://draggabilly.desandro.com/draggabilly.pkgd.js'></script>
+
+        <script src="js/draggable-div-with-touch.js"></script>
+
+        <script>
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const body = document.body;
+
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme === 'dark') {
+                body.classList.add('dark');
+                document.documentElement.classList.add('dark');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            } else {
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            }
+
+            themeToggleBtn.addEventListener('click', () => {
+                body.classList.toggle('dark');
+                document.documentElement.classList.toggle('dark');
+
+                if (body.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                    themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+                }
+            });
+
+            // Custom Hamburger and Full-Page Overlay Menu Toggling with Scroll Lock
+            const hamburgerBtn = document.getElementById('index-hamburger');
+            const menuOverlay = document.getElementById('index-menu-overlay');
+            const menuLinks = document.querySelectorAll('.index-menu-link');
+
+            function preventDefault(e) {
+                e.preventDefault();
+            }
+
+            const wheelOpt = { passive: false };
+            const wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+            function openMenu() {
+                hamburgerBtn.classList.add('is-active');
+                menuOverlay.classList.add('is-open');
+                body.classList.add('menu-open-lock');
+                document.documentElement.classList.add('menu-open-lock');
+
+                // Intercept scroll actions (mousewheel, touchmove, keys)
+                window.addEventListener('DOMMouseScroll', preventDefault, false);
+                window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+                window.addEventListener('touchmove', preventDefault, wheelOpt);
+            }
+
+            function closeMenu() {
+                hamburgerBtn.classList.remove('is-active');
+                menuOverlay.classList.remove('is-open');
+                body.classList.remove('menu-open-lock');
+                document.documentElement.classList.remove('menu-open-lock');
+
+                // Restore standard scrolling
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+                window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+                window.removeEventListener('touchmove', preventDefault, wheelOpt);
+            }
+
+            function toggleMenu() {
+                const isOpen = menuOverlay.classList.contains('is-open');
+                if (isOpen) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            }
+
+            hamburgerBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleMenu();
+            });
+
+            // Close menu when a link is clicked
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    closeMenu();
+                });
+            });
+
+
+
+
+            // Close menu on Escape key press
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && menuOverlay.classList.contains('is-open')) {
+                    closeMenu();
+                }
+            });
+
+            // Prevent right-click context menu specifically on home page images
+            document.addEventListener('contextmenu', (e) => {
+                const isMeImg = e.target.classList.contains('center-me-img');
+                const isTitleImg = e.target.closest('.creative-copy-title img');
+
+                if (isMeImg || isTitleImg) {
+                    e.preventDefault();
+                }
+            });
+
+            // Header scroll detection - hide on scroll down, show on scroll up
+            const header = document.querySelector('.index-header');
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                    // Scrolling down - hide header
+                    header.classList.add('hidden');
+                } else {
+                    // Scrolling up - show header
+                    header.classList.remove('hidden');
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        </script>
+</body>
+
+</html>
