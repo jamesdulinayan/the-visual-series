@@ -836,3 +836,19 @@ div.header-menu-nav-item--active * {
     object-fit: cover !important;
     display: block;
 }
+
+/* Remove bottom padding from sections */
+[data-section-id="69076208ebaab802f22f53d8"],
+[data-section-id="69076f2765976d7a8411c583"] {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+[data-section-id="69076208ebaab802f22f53d8"] .content-wrapper,
+[data-section-id="69076f2765976d7a8411c583"] .content-wrapper {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+[data-section-id="69076208ebaab802f22f53d8"] .section-divider-block,
+[data-section-id="69076f2765976d7a8411c583"] .section-divider-block {
+    height: 0 !important;
+}
