@@ -27251,8 +27251,8 @@ body:not(.header--menu-open) [data-header-style="gradient"].header .language-pic
     z-index: 2;
     width: 100%;
     box-sizing: border-box;
-    padding-top: .8vw;
-    padding-bottom: .8vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     padding-left: 6vw;
     padding-right: 6vw;
     pointer-events: auto

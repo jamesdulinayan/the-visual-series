@@ -725,5 +725,55 @@ div.header-menu-nav-item--active * {
     box-sizing: border-box !important;
 }
 
+/* Header social icons sizing to match footer (16px) */
+.header-actions-action--social .icon,
+.header-menu-actions-action .icon {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* Center header logo vertically and horizontally, style/invert it */
+.header-title-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.header-title-logo a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+}
+
+.header-title-logo img {
+    display: block !important;
+    max-height: 45px !important;
+    width: auto !important;
+    filter: invert(1) !important; /* Invert black logo to white */
+}
+
+/* Center header logo vertically and horizontally on mobile */
+.header-display-mobile .header-title-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.header-display-mobile .header-title-logo a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.header-display-mobile .header-title-logo img {
+    max-height: 35px !important;
+}
+
+
+
+
 
 
