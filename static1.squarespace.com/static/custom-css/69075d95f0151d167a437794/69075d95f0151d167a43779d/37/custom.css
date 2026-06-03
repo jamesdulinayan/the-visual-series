@@ -659,9 +659,11 @@ div.header-menu-nav-item--active * {
     .fe-block-yui_3_17_2_1_1762090692095_2271 {
         margin-top: 0 !important;
     }
+
     .fe-block-yui_3_17_2_1_1762090692095_3282 {
         margin-top: 0 !important;
     }
+
     .fe-block-4e58bd56b54568fb154b {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
@@ -670,6 +672,7 @@ div.header-menu-nav-item--active * {
 
 /* Responsive sizes to match the exact title width on desktop */
 @media (min-width: 768px) {
+
     .fe-block-yui_3_17_2_1_1762090692095_2271,
     .fe-block-yui_3_17_2_1_1762090692095_3282,
     .fe-block-4e58bd56b54568fb154b {
@@ -701,9 +704,9 @@ div.header-menu-nav-item--active * {
     -webkit-clip-path: ellipse(50% 50% at 50% 50%) !important;
     overflow: hidden !important;
     box-shadow:
-        0 0 0 1.5px rgba(255,255,255,0.9),
+        0 0 0 1.5px rgba(255, 255, 255, 0.9),
         0 0 0 7px transparent,
-        0 0 0 8.5px rgba(255,255,255,0.35) !important;
+        0 0 0 8.5px rgba(255, 255, 255, 0.35) !important;
 }
 
 #block-yui_3_17_2_1_1762090692095_3282 video,
@@ -751,7 +754,8 @@ div.header-menu-nav-item--active * {
     display: block !important;
     max-height: 45px !important;
     width: auto !important;
-    filter: invert(1) !important; /* Invert black logo to white */
+    filter: invert(1) !important;
+    /* Invert black logo to white */
 }
 
 /* Center header logo vertically and horizontally on mobile */
@@ -777,9 +781,11 @@ div.header-menu-nav-item--active * {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
 }
+
 .hero-heading .desktop-br {
     display: inline !important;
 }
+
 .hero-heading .mobile-br {
     display: none !important;
 }
@@ -788,6 +794,7 @@ div.header-menu-nav-item--active * {
     .hero-heading .desktop-br {
         display: none !important;
     }
+
     .hero-heading .mobile-br {
         display: inline !important;
     }
@@ -802,37 +809,30 @@ div.header-menu-nav-item--active * {
 .heirloom-paragraph {
     margin-top: 2rem !important;
     width: 100% !important;
-    max-width: none !important;
+    max-width: 850px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     box-sizing: border-box !important;
 }
 
 /* Hero Video Container (Oval styling) */
 .hero-video-container {
     width: 100%;
-    max-width: none !important;
+    max-width: 850px;
     margin: 0 auto !important;
     aspect-ratio: 16 / 9;
     clip-path: ellipse(50% 50% at 50% 50%) !important;
     -webkit-clip-path: ellipse(50% 50% at 50% 50%) !important;
     overflow: hidden !important;
     box-shadow:
-        0 0 0 1.5px rgba(255,255,255,0.9),
+        0 0 0 1.5px rgba(255, 255, 255, 0.9),
         0 0 0 7px transparent,
-        0 0 0 8.5px rgba(255,255,255,0.35) !important;
+        0 0 0 8.5px rgba(255, 255, 255, 0.35) !important;
 }
+
 .hero-video-container video {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
