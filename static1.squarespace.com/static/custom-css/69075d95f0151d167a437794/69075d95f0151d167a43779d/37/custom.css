@@ -772,6 +772,65 @@ div.header-menu-nav-item--active * {
     max-height: 35px !important;
 }
 
+/* Hero heading responsive styles */
+.hero-heading {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+.hero-heading .desktop-br {
+    display: inline !important;
+}
+.hero-heading .mobile-br {
+    display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-heading .desktop-br {
+        display: none !important;
+    }
+    .hero-heading .mobile-br {
+        display: inline !important;
+    }
+}
+
+/* Remove margin bottom from wedding + engagement photography pre block */
+#block-yui_3_17_2_1_1762090692095_2271 pre {
+    margin-bottom: 0 !important;
+}
+
+/* Spacing for heirloom paragraph below image */
+.heirloom-paragraph {
+    margin-top: 2rem !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+}
+
+/* Hero Video Container (Oval styling) */
+.hero-video-container {
+    width: 100%;
+    max-width: none !important;
+    margin: 0 auto !important;
+    aspect-ratio: 16 / 9;
+    clip-path: ellipse(50% 50% at 50% 50%) !important;
+    -webkit-clip-path: ellipse(50% 50% at 50% 50%) !important;
+    overflow: hidden !important;
+    box-shadow:
+        0 0 0 1.5px rgba(255,255,255,0.9),
+        0 0 0 7px transparent,
+        0 0 0 8.5px rgba(255,255,255,0.35) !important;
+}
+.hero-video-container video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+
+
+
+
 
 
 
