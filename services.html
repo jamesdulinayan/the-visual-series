@@ -3390,147 +3390,23 @@
                             <div data-fluid-engine="true">
                                 <style>
                                     .fe-690785ab0cce39185309c2d8 {
-                                        --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11.0px);
-                                        --cell-max-width: calc((var(--sqs-site-max-width, 1500px) - (11.0px * (8 - 1))) / 8);
-
-                                        display: grid;
-                                        position: relative;
-                                        grid-area: 1/1/-1/-1;
-                                        grid-template-rows: repeat(16, minmax(24px, auto));
-                                        grid-template-columns:
-                                            minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
-                                        row-gap: 11.0px;
-                                        column-gap: 11.0px;
-                                        overflow-x: hidden;
-                                        overflow-x: clip;
+                                        display: flex !important;
+                                        flex-direction: column !important;
+                                        align-items: center !important;
+                                        justify-content: center !important;
+                                        text-align: center !important;
+                                        padding: 80px 20px !important;
+                                        box-sizing: border-box !important;
+                                        gap: 24px !important;
+                                        min-height: auto !important;
                                     }
 
-                                    @media (min-width: 768px) {
-                                        .background-width--inset .fe-690785ab0cce39185309c2d8 {
-                                            --inset-padding: calc(var(--sqs-site-gutter) * 2);
-                                        }
-
-                                        .fe-690785ab0cce39185309c2d8 {
-                                            --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11.0px);
-                                            --cell-max-width: calc((var(--sqs-site-max-width, 1500px) - (11.0px * (24 - 1))) / 24);
-                                            --inset-padding: 0vw;
-
-                                            --row-height-scaling-factor: 0.0215;
-                                            --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding)));
-
-                                            grid-template-rows: repeat(16, minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
-                                            grid-template-columns:
-                                                minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
-                                        }
-                                    }
-
-
-                                    .fe-block-71e3dfe53ef8e325dc76 {
-                                        grid-area: 1/2/7/10;
-                                        z-index: 1;
-
-                                        @media (max-width: 767px) {}
-                                    }
-
-                                    .fe-block-71e3dfe53ef8e325dc76 .sqs-block {
-                                        justify-content: center;
-                                    }
-
-                                    .fe-block-71e3dfe53ef8e325dc76 .sqs-block-alignment-wrapper {
-                                        align-items: center;
-                                    }
-
-                                    @media (min-width: 768px) {
-                                        .fe-block-71e3dfe53ef8e325dc76 {
-                                            grid-area: 1/7/7/21;
-                                            z-index: 1;
-
-
-
-
-
-
-                                        }
-
-                                        .fe-block-71e3dfe53ef8e325dc76 .sqs-block {
-                                            justify-content: center;
-                                        }
-
-                                        .fe-block-71e3dfe53ef8e325dc76 .sqs-block-alignment-wrapper {
-                                            align-items: center;
-                                        }
-                                    }
-
-                                    .fe-block-bdf1ba6d943d5ac8d9a7 {
-                                        grid-area: 7/2/13/10;
-                                        z-index: 2;
-
-                                        @media (max-width: 767px) {}
-                                    }
-
-                                    .fe-block-bdf1ba6d943d5ac8d9a7 .sqs-block {
-                                        justify-content: center;
-                                    }
-
-                                    .fe-block-bdf1ba6d943d5ac8d9a7 .sqs-block-alignment-wrapper {
-                                        align-items: center;
-                                    }
-
-                                    @media (min-width: 768px) {
-                                        .fe-block-bdf1ba6d943d5ac8d9a7 {
-                                            grid-area: 7/12/14/16;
-                                            z-index: 2;
-
-
-
-
-
-
-                                        }
-
-                                        .fe-block-bdf1ba6d943d5ac8d9a7 .sqs-block {
-                                            justify-content: center;
-                                        }
-
-                                        .fe-block-bdf1ba6d943d5ac8d9a7 .sqs-block-alignment-wrapper {
-                                            align-items: center;
-                                        }
-                                    }
-
-                                    .fe-block-f46cf70f4082c2ffb640 {
-                                        grid-area: 13/2/17/10;
-                                        z-index: 2;
-
-                                        @media (max-width: 767px) {}
-                                    }
-
-                                    .fe-block-f46cf70f4082c2ffb640 .sqs-block {
-                                        justify-content: center;
-                                    }
-
-                                    .fe-block-f46cf70f4082c2ffb640 .sqs-block-alignment-wrapper {
-                                        align-items: center;
-                                    }
-
-                                    @media (min-width: 768px) {
-                                        .fe-block-f46cf70f4082c2ffb640 {
-                                            grid-area: 14/10/17/18;
-                                            z-index: 2;
-
-
-
-
-
-
-                                        }
-
-                                        .fe-block-f46cf70f4082c2ffb640 .sqs-block {
-                                            justify-content: center;
-                                        }
-
-                                        .fe-block-f46cf70f4082c2ffb640 .sqs-block-alignment-wrapper {
-                                            align-items: center;
-                                        }
+                                    .fe-690785ab0cce39185309c2d8 .fe-block {
+                                        position: static !important;
+                                        grid-area: auto !important;
+                                        width: 100% !important;
+                                        max-width: 800px !important;
+                                        margin: 0 auto !important;
                                     }
                                 </style>
                                 <div class="fluid-engine fe-690785ab0cce39185309c2d8">
@@ -3540,8 +3416,7 @@
                                                 <div class="sqs-text-block-container">
 
                                                     <div class="sqs-html-content" data-sqsp-text-block-content>
-                                                        <pre style="text-align:center;"><code>photography packages</code></pre>
-                                                        <h2 style="text-align:center;white-space:pre-wrap;">Your Story, Beautifully Told</h2>
+                                                         <h2 style="text-align:center;white-space:pre-wrap;">Your <em>Story</em>,<br>Beautifully Told</h2>
                                                     </div>
 
 
@@ -3614,142 +3489,6 @@
 
 
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="fe-block fe-block-bdf1ba6d943d5ac8d9a7">
-                                        <div class="sqs-block website-component-block sqs-block-website-component sqs-block-image image-block" data-aspect-ratio="120.35307662786235" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/748.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/8018.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/9882.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-film-grain.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-liquid.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-parallax.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-refracted-circles.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-refracted-lines.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.shared.constants.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.imageFluid" data-sqsp-block="image" data-website-component-id="bdf1ba6d943d5ac8d9a7" id="block-bdf1ba6d943d5ac8d9a7">
-                                            <div class="sqs-block-content">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                <div class="fluid-image-component-root image-block-outer-wrapper design-layout-fluid image-position-center combination-animation-site-default individual-animation-site-default
-    }" data-component-id="bdf1ba6d943d5ac8d9a7" data-test="image-block-fluid-outer-wrapper" data-is-image-stretched="true" data-is-mask-applied="false" data-media-focal-point="0.5,0.5" data-bpo="" data-breakpoints="[{&quot;id&quot;:&quot;system_desktop&quot;,&quot;name&quot;:&quot;Desktop&quot;},{&quot;id&quot;:&quot;system_mobile&quot;,&quot;name&quot;:&quot;Mobile&quot;,&quot;maxWidth&quot;:&quot;767px&quot;}]">
-                                                    <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image">
-                                                        <div class="fluid-image-container sqs-image-content js-image-container visitor-mode" data-sqsp-image-block-image-container>
-
-
-
-
-
-
-
-                                                            <div class="js-content-mode-element-wrapper js-content-mode-element-system_desktop">
-
-
-                                                                <div class="js-content-mode-element">
-
-
-
-
-
-
-
-                                                                    <img data-stretch="true" data-src="https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg" data-image="https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg" data-image-dimensions="2500x3751" data-image-focal-point="0.5,0.5" data-sqsp-image-block-image alt="" data-licensed-asset-preview="false" data-load="true" elementtiming="system-image-block" src="https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg" width="2500" height="3751" alt="" sizes="100vw" style="display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);" srcset="https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=100w 100w, https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=300w 300w, https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=500w 500w, https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=750w 750w, https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/69075d95f0151d167a437794/d4a83234-7f5f-464c-aa87-4f8d475c3017/premium_photo-1661322701877-aa6d2c1bf272.jpg?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
-
-
-
-                                                                    <div class="fluidImageOverlay"></div>
-
-                                                                </div>
-
-
-                                                            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                        </div>
-                                                    </div>
-                                                    <style>
-                                                        #block-bdf1ba6d943d5ac8d9a7 {
-                                                            --image-component-focal-point: 50% 50%;
-
-                                                            --image-component-object-fit: cover;
-                                                            --image-component-overlay-opacity: 0;
-                                                            --image-component-overlay-blend-mode: normal;
-
-                                                            --image-component-native-aspect-ratio: 2500/3751;
-
-
-
-
-                                                        }
-
-                                                        #block-bdf1ba6d943d5ac8d9a7 .fluid-image-container.visitor-mode {
-
-
-                                                            overflow: hidden;
-                                                            -webkit-mask-image: -webkit-radial-gradient(white, black);
-                                                            clip-path: none;
-                                                            -webkit-clip-path: none;
-
-                                                        }
-
-                                                        #block-bdf1ba6d943d5ac8d9a7 .js-content-mode-element-wrapper {
-                                                            position: relative;
-                                                            width: 100%;
-                                                            height: 100%;
-                                                            display: none;
-                                                        }
-
-                                                        #block-bdf1ba6d943d5ac8d9a7 .js-content-mode-element-system_desktop {
-                                                            display: block;
-                                                        }
-                                                    </style>
-                                                    <style class="transform-overrides-vars">
-
-                                                    </style>
-
-
-
-
-
-                                                </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -4108,7 +3847,7 @@
                                                 <div class="sqs-text-block-container">
 
                                                     <div class="sqs-html-content" data-sqsp-text-block-content>
-                                                        <pre style="text-align:center;"><code>choose your experience</code></pre>
+                                                        <pre style="text-align:center;"><code>choose your series</code></pre>
                                                     </div>
 
 
@@ -4916,9 +4655,9 @@ system_desktop
                                                 <div class="sqs-text-block-container">
 
                                                     <div class="sqs-html-content" data-sqsp-text-block-content>
-                                                        <h3 style="white-space:pre-wrap;"><em>wedding</em> experience</h3>
-                                                        <pre><code>For the day that begins your forever.</code></pre>
-                                                        <p class="" style="white-space:pre-wrap;">From morning preparations to your final dance beneath the stars, my process is designed to flow seamlessly with your day, never intruding, always observing. I’ll document the moments that matter — the laughter, the tears, the quiet exchanges that no one else sees — and elevate them into art that endures.</p>
+                                                        <h3 style="white-space:pre-wrap;">Wedding Series</h3>
+                                                        <pre><code>For the day your forever begins</code></pre>
+                                                        <p class="" style="white-space:pre-wrap;">From morning preparations to the final dance beneath the stars, the documentation flows seamlessly with the wedding day, capturing every detail and genuine emotion without intrusion. All key moments—from the laughter and tears to the quiet, unseen exchanges—are preserved and elevated into enduring art.</p>
                                                     </div>
 
 
@@ -5089,7 +4828,7 @@ system_desktop
             min-width: 70%;
             max-width: 300px;
           " data-sqsp-accordion-block-item-description>
-                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Experience Includes:</strong></p>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Series Includes:</strong></p>
                                                                 <ul data-rte-list="true">
                                                                     <li>
                                                                         <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
@@ -5178,7 +4917,7 @@ system_desktop
             min-width: 70%;
             max-width: 300px;
           " data-sqsp-accordion-block-item-description>
-                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Experience Includes:</strong></p>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Series Includes:</strong></p>
                                                                 <ul data-rte-list="true">
                                                                     <li>
                                                                         <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
@@ -5990,9 +5729,9 @@ system_desktop
                                                 <div class="sqs-text-block-container">
 
                                                     <div class="sqs-html-content" data-sqsp-text-block-content>
-                                                        <h3 style="white-space:pre-wrap;"><em>engagement</em> experience</h3>
-                                                        <pre><code>The beginning of your story, beautifully told.</code></pre>
-                                                        <p class="" style="white-space:pre-wrap;">Your engagement session is a chance to slow down and simply be yourselves — away from the timeline and the expectations. We’ll choose a location that reflects your story, whether it’s a quiet morning by the sea or an elegant city stroll at dusk.</p>
+                                                        <h3 style="white-space:pre-wrap;">Debut Series</h3>
+                                                        <pre><code>Celebrating the milestone of coming of age</code></pre>
+                                                        <p class="" style="white-space:pre-wrap;">A milestone event deserves to be documented with elegance and grace. From the grand entrance to the candid celebrations with family and friends, every detail of the eighteenth birthday is captured to reflect individual style and the significance of entering adulthood.</p>
                                                     </div>
 
 
@@ -6163,7 +5902,7 @@ system_desktop
             min-width: 70%;
             max-width: 300px;
           " data-sqsp-accordion-block-item-description>
-                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Experience Includes:</strong></p>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Debut Series Includes:</strong></p>
                                                                 <ul data-rte-list="true">
                                                                     <li>
                                                                         <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
@@ -6252,7 +5991,7 @@ system_desktop
             min-width: 70%;
             max-width: 300px;
           " data-sqsp-accordion-block-item-description>
-                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Experience Includes:</strong></p>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Debut Series Includes:</strong></p>
                                                                 <ul data-rte-list="true">
                                                                     <li>
                                                                         <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
@@ -7064,9 +6803,9 @@ system_desktop
                                                 <div class="sqs-text-block-container">
 
                                                     <div class="sqs-html-content" data-sqsp-text-block-content>
-                                                        <h3 style="white-space:pre-wrap;"><em>couples</em> experience</h3>
-                                                        <pre><code>A creative celebration of love, style, and storytelling.</code></pre>
-                                                        <p class="" style="white-space:pre-wrap;">For couples who want something beyond tradition — a curated editorial session that merges fine art with fashion aesthetics. These shoots are designed collaboratively, from wardrobe styling to mood boards, allowing you to express your love through visual artistry.</p>
+                                                        <h3 style="white-space:pre-wrap;">Kids Series</h3>
+                                                        <pre><code>Capturing the joy, wonder, and memories of childhood</code></pre>
+                                                        <p class="" style="white-space:pre-wrap;">From birthday celebrations filled with laughter to intimate family gatherings, these moments are preserved with vibrant storytelling and care. The focus is on documenting authentic interactions, playful energy, and the unique bond of family in a beautiful, lasting format.</p>
                                                     </div>
 
 
@@ -7237,7 +6976,7 @@ system_desktop
             min-width: 70%;
             max-width: 300px;
           " data-sqsp-accordion-block-item-description>
-                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Experience Includes:</strong></p>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Kids Series Includes:</strong></p>
                                                                 <ul data-rte-list="true">
                                                                     <li>
                                                                         <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
@@ -7326,7 +7065,7 @@ system_desktop
             min-width: 70%;
             max-width: 300px;
           " data-sqsp-accordion-block-item-description>
-                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Wedding Experience Includes:</strong></p>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Kids Series Includes:</strong></p>
                                                                 <ul data-rte-list="true">
                                                                     <li>
                                                                         <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
@@ -7470,6 +7209,1062 @@ system_desktop
                     </div>
 
                 </section>
+                <section data-test="page-section" data-section-theme="light" class='page-section has-section-divider
+    
+      full-bleed-section
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      
+        section-height--custom
+      
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+      
+    
+    
+    light' data-section-id="69078c3403ec5f696617c1f9" data-controller="SectionWrapperController" data-current-styles="{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;imageOverlayOpacity&quot;: 0.15,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;sectionHeight&quot;: &quot;section-height--custom&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;customSectionHeight&quot;: 0,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;customContentWidth&quot;: 50,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;sectionTheme&quot;: &quot;light&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;sectionAnimation&quot;: &quot;none&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;backgroundMode&quot;: &quot;image&quot;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }" data-current-context="{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;video&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;playbackSpeed&quot;: 1,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;filter&quot;: 1,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;filterStrength&quot;: 0,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;zoom&quot;: 0,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;videoSourceProvider&quot;: &quot;none&quot;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;backgroundImageId&quot;: null,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;backgroundMediaEffect&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;type&quot;: &quot;none&quot;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;divider&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;enabled&quot;: true,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;type&quot;: &quot;none&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;width&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;unit&quot;: &quot;vw&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;value&quot;: 100.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;height&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;unit&quot;: &quot;vw&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;value&quot;: 6.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;isFlipX&quot;: false,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;isFlipY&quot;: false,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;offset&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;unit&quot;: &quot;px&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;value&quot;: 0.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      &quot;stroke&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;style&quot;: &quot;solid&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;color&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;type&quot;: &quot;THEME_COLOR&quot;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;thickness&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;unit&quot;: &quot;px&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;value&quot;: 1.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;dashLength&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;unit&quot;: &quot;px&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;value&quot;: 5.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;gapLength&quot;: {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;unit&quot;: &quot;px&quot;,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          &quot;value&quot;: 15.0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        &quot;linecap&quot;: &quot;square&quot;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    &quot;typeName&quot;: &quot;page&quot;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  }" data-animation="none" data-fluid-engine-section id="couples" data-sqsp-section="fluid-engine">
+                    <div class="section-border" data-controller="SectionDivider" style="clip-path: url(#section-divider-69078c3403ec5f696617c1f9);">
+                        <div class="section-background">
+
+
+
+                        </div>
+                    </div>
+                    <div class='content-wrapper' style='
+      
+        
+          
+          padding-top: calc(0vmax / 10); padding-bottom: calc(0vmax / 10);
+        
+      
+    '>
+                        <div class="content">
+
+
+
+
+
+
+
+
+
+
+                            <div data-fluid-engine="true">
+                                <style>
+                                    .fe-69078c3403ec5f696617c1f5 {
+                                        --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 0.0px);
+                                        --cell-max-width: calc((var(--sqs-site-max-width, 1500px) - (0.0px * (8 - 1))) / 8);
+
+                                        display: grid;
+                                        position: relative;
+                                        grid-area: 1/1/-1/-1;
+                                        grid-template-rows: repeat(41, minmax(24px, auto));
+                                        grid-template-columns:
+                                            minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
+                                        row-gap: 0.0px;
+                                        column-gap: 0.0px;
+                                        overflow-x: hidden;
+                                        overflow-x: clip;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        .background-width--inset .fe-69078c3403ec5f696617c1f5 {
+                                            --inset-padding: calc(var(--sqs-site-gutter) * 2);
+                                        }
+
+                                        .fe-69078c3403ec5f696617c1f5 {
+                                            --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 0.0px);
+                                            --cell-max-width: calc((var(--sqs-site-max-width, 1500px) - (0.0px * (24 - 1))) / 24);
+                                            --inset-padding: 0vw;
+
+                                            --row-height-scaling-factor: 0.0215;
+                                            --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding)));
+
+                                            grid-template-rows: repeat(25, minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+                                            grid-template-columns:
+                                                minmax(var(--grid-gutter), 1fr) repeat(24, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
+                                        }
+                                    }
+
+
+                                    .fe-block-e87889dbc171e1281485 {
+                                        grid-area: 1/1/19/11;
+                                        z-index: 1;
+
+                                        @media (max-width: 767px) {}
+                                    }
+
+                                    .fe-block-e87889dbc171e1281485 .sqs-block {
+                                        justify-content: center;
+                                    }
+
+                                    .fe-block-e87889dbc171e1281485 .sqs-block-alignment-wrapper {
+                                        align-items: center;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        .fe-block-e87889dbc171e1281485 {
+                                            grid-area: 1/14/26/27;
+                                            z-index: 1;
+
+
+
+
+
+
+                                        }
+
+                                        .fe-block-e87889dbc171e1281485 .sqs-block {
+                                            justify-content: center;
+                                        }
+
+                                        .fe-block-e87889dbc171e1281485 .sqs-block-alignment-wrapper {
+                                            align-items: center;
+                                        }
+                                    }
+
+                                    .fe-block-yui_3_17_2_1_1768821774726_1244e {
+                                        grid-area: 18/1/20/11;
+                                        z-index: 6;
+
+                                        @media (max-width: 767px) {}
+                                    }
+
+                                    .fe-block-yui_3_17_2_1_1768821774726_1244e .sqs-block {
+                                        justify-content: center;
+                                    }
+
+                                    .fe-block-yui_3_17_2_1_1768821774726_1244e .sqs-block-alignment-wrapper {
+                                        align-items: center;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        .fe-block-yui_3_17_2_1_1768821774726_1244e {
+                                            grid-area: 1/13/26/15;
+                                            z-index: 6;
+
+
+
+
+
+
+                                        }
+
+                                        .fe-block-yui_3_17_2_1_1768821774726_1244e .sqs-block {
+                                            justify-content: center;
+                                        }
+
+                                        .fe-block-yui_3_17_2_1_1768821774726_1244e .sqs-block-alignment-wrapper {
+                                            align-items: center;
+                                        }
+                                    }
+
+                                    .fe-block-e96ea33c48e777dcf75a {
+                                        grid-area: 21/2/32/10;
+                                        z-index: 2;
+
+                                        @media (max-width: 767px) {}
+                                    }
+
+                                    .fe-block-e96ea33c48e777dcf75a .sqs-block {
+                                        justify-content: center;
+                                    }
+
+                                    .fe-block-e96ea33c48e777dcf75a .sqs-block-alignment-wrapper {
+                                        align-items: center;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        .fe-block-e96ea33c48e777dcf75a {
+                                            grid-area: 6/3/15/11;
+                                            z-index: 2;
+
+
+
+
+
+
+                                        }
+
+                                        .fe-block-e96ea33c48e777dcf75a .sqs-block {
+                                            justify-content: center;
+                                        }
+
+                                        .fe-block-e96ea33c48e777dcf75a .sqs-block-alignment-wrapper {
+                                            align-items: center;
+                                        }
+                                    }
+
+                                    .fe-block-e3b46eaf25856d152c05 {
+                                        grid-area: 33/2/37/10;
+                                        z-index: 4;
+
+                                        @media (max-width: 767px) {}
+                                    }
+
+                                    .fe-block-e3b46eaf25856d152c05 .sqs-block {
+                                        justify-content: center;
+                                    }
+
+                                    .fe-block-e3b46eaf25856d152c05 .sqs-block-alignment-wrapper {
+                                        align-items: center;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        .fe-block-e3b46eaf25856d152c05 {
+                                            grid-area: 16/3/19/11;
+                                            z-index: 4;
+
+
+
+
+
+
+                                        }
+
+                                        .fe-block-e3b46eaf25856d152c05 .sqs-block {
+                                            justify-content: center;
+                                        }
+
+                                        .fe-block-e3b46eaf25856d152c05 .sqs-block-alignment-wrapper {
+                                            align-items: center;
+                                        }
+                                    }
+
+                                    .fe-block-ecc6fa93f63977db7edd {
+                                        grid-area: 38/2/40/10;
+                                        z-index: 5;
+
+                                        @media (max-width: 767px) {}
+                                    }
+
+                                    .fe-block-ecc6fa93f63977db7edd .sqs-block {
+                                        justify-content: center;
+                                    }
+
+                                    .fe-block-ecc6fa93f63977db7edd .sqs-block-alignment-wrapper {
+                                        align-items: center;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        .fe-block-ecc6fa93f63977db7edd {
+                                            grid-area: 20/3/21/8;
+                                            z-index: 5;
+
+
+
+
+
+
+                                        }
+
+                                        .fe-block-ecc6fa93f63977db7edd .sqs-block {
+                                            justify-content: center;
+                                        }
+
+                                        .fe-block-ecc6fa93f63977db7edd .sqs-block-alignment-wrapper {
+                                            align-items: center;
+                                        }
+                                    }
+                                </style>
+                                <div class="fluid-engine fe-69078c3403ec5f696617c1f5">
+                                    <div class="fe-block fe-block-e87889dbc171e1281485">
+                                        <div class="sqs-block website-component-block sqs-block-website-component sqs-block-image image-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/748.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/8018.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/9882.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-film-grain.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-liquid.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-parallax.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-refracted-circles.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/image-effect-refracted-lines.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.shared.constants.js&quot;,&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.imageFluid/8c55e9a8-929d-410b-b18c-901d825cb633_604/website.components.imageFluid.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.imageFluid" data-sqsp-block="image" data-website-component-id="e87889dbc171e1281485" id="block-e87889dbc171e1281485">
+                                            <div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="fluid-image-component-root image-block-outer-wrapper design-layout-fluid image-position-center combination-animation-site-default individual-animation-site-default
+    }" data-component-id="e87889dbc171e1281485" data-test="image-block-fluid-outer-wrapper" data-is-image-stretched="true" data-is-mask-applied="false" data-media-focal-point="0.4254079254079254,0.7680480030001875" data-bpo="" data-breakpoints="[{&quot;id&quot;:&quot;system_desktop&quot;,&quot;name&quot;:&quot;Desktop&quot;},{&quot;id&quot;:&quot;system_mobile&quot;,&quot;name&quot;:&quot;Mobile&quot;,&quot;maxWidth&quot;:&quot;767px&quot;}]">
+                                                    <div class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper" data-animation-role="image">
+                                                        <div class="fluid-image-container sqs-image-content js-image-container visitor-mode" data-sqsp-image-block-image-container>
+
+
+
+
+
+
+
+                                                            <div class="js-content-mode-element-wrapper js-content-mode-element-system_desktop">
+
+
+                                                                <div class="js-content-mode-element">
+
+
+
+
+
+
+
+                                                                    <img data-stretch="true" data-src="img/event-series.png" data-image="img/event-series.png" data-image-dimensions="5158x3438" data-image-focal-point="0.4254079254079254,0.7680480030001875" data-sqsp-image-block-image alt="" data-licensed-asset-preview="false" data-load="true" elementtiming="system-image-block" src="img/event-series.png" width="5158" height="3438" alt="" sizes="100vw" style="display:block;object-position: var(--image-component-focal-point);object-fit: var(--image-component-object-fit);" srcset="img/event-series.png 100w, img/event-series.png 300w, img/event-series.png 500w, img/event-series.png 750w, img/event-series.png 1000w, img/event-series.png 1500w, img/event-series.png 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+
+
+                                                                    <div class="fluidImageOverlay"></div>
+
+                                                                </div>
+
+
+                                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        </div>
+                                                    </div>
+                                                    <style>
+                                                        #block-e87889dbc171e1281485 {
+                                                            --image-component-focal-point: 42.54079254079254% 76.80480030001875%;
+
+                                                            --image-component-object-fit: cover;
+                                                            --image-component-overlay-opacity: 1;
+                                                            --image-component-overlay-blend-mode: normal;
+
+                                                            --image-component-native-aspect-ratio: 5158/3438;
+
+
+
+                                                            --image-block-overlay-color: hsla(0, 0%, 0%, 0.1);
+
+
+                                                        }
+
+                                                        #block-e87889dbc171e1281485 .fluid-image-container.visitor-mode {
+
+
+                                                            overflow: hidden;
+                                                            -webkit-mask-image: -webkit-radial-gradient(white, black);
+                                                            clip-path: none;
+                                                            -webkit-clip-path: none;
+
+                                                        }
+
+                                                        #block-e87889dbc171e1281485 .js-content-mode-element-wrapper {
+                                                            position: relative;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            display: none;
+                                                        }
+
+                                                        #block-e87889dbc171e1281485 .js-content-mode-element-system_desktop {
+                                                            display: block;
+                                                        }
+                                                    </style>
+                                                    <style class="transform-overrides-vars">
+
+                                                    </style>
+
+
+
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fe-block fe-block-yui_3_17_2_1_1768821774726_1244e">
+                                        <div class="sqs-block website-component-block sqs-block-website-component" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.shape/24757eae-7c59-429e-a7e1-908c4117def8_1012/website.components.shape.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.shape/24757eae-7c59-429e-a7e1-908c4117def8_1012/website.components.shape.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.shape" data-sqsp-block="shape" data-website-component-id="yui_3_17_2_1_1768821774726_1244e" id="block-yui_3_17_2_1_1768821774726_1244e">
+                                            <div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="sqs-shape-block-outer-container">
+
+
+
+
+
+
+
+                                                    <div class="sqs-shape-block-container sqs-block-alignment-wrapper 
+  sqs-shape-block-container-system_desktop
+ hidden-stretch-block" data-stretched-to-fill data-shape-name="keystone" data-breakpoint-override-id="
+system_desktop
+" data-desktop-drop-shadow={"angle":145,"distance":{"value":2,"unit":"px"},"blur":{"value":3,"unit":"px"},"color":{"type":"THEME_COLOR"}} data-desktop-blur={"enabled":false,"filterType":"element","blurRadius":{"value":15,"unit":"px"}} data-blend-mode='normal'>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" data-sqsp-shape-block-shape class="sqs-shape" viewBox="0 0 100 150">
+                                                            <path d="M79.2 149.5H20.8L1 .5h98l-19.8 149z" />
+                                                        </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <style>
+                                                        #block-yui_3_17_2_1_1768821774726_1244e .sqs-shape-block-container-system_desktop {
+                                                            display: flex;
+                                                        }
+
+                                                        #block-yui_3_17_2_1_1768821774726_1244e .sqs-block-alignment-wrapper {
+
+
+                                                            justify-content: center;
+
+
+                                                        }
+
+
+                                                        #block-yui_3_17_2_1_1768821774726_1244e .sqs-shape>* {
+
+                                                            stroke: none;
+
+                                                        }
+                                                    </style>
+                                                    <style class="overrides-vars">
+                                                        #block-yui_3_17_2_1_1768821774726_1244e .sqs-shape-block-container-system_desktop {
+                                                            display: flex;
+                                                        }
+
+                                                        @media screen and (max-width: 767px) {
+
+
+
+                                                            #block-yui_3_17_2_1_1768821774726_1244e .sqs-block-alignment-wrapper {
+
+
+                                                                justify-content: center;
+
+
+                                                            }
+
+
+
+                                                            #block-yui_3_17_2_1_1768821774726_1244e {}
+                                                        }
+                                                    </style>
+                                                    <style class="transform-vars">
+                                                        .fe-block-yui_3_17_2_1_1768821774726_1244e {
+                                                            --opacity: 100%;
+                                                            --translate-x: 0px;
+                                                            --translate-y: 0px;
+                                                            --rotation: 0deg;
+                                                            --scale-x: 100%;
+                                                            --scale-y: 100%;
+                                                            --skew-x: 0deg;
+                                                            --skew-y: 0deg;
+                                                            --origin-x: 50%;
+                                                            --origin-y: 50%;
+
+                                                            opacity: var(--opacity, 1);
+                                                            transform: translateX(var(--translate-x)) translateY(var(--translate-y)) rotate(var(--rotation)) scale(var(--scale-x), var(--scale-y)) skewX(var(--skew-x)) skewY(var(--skew-y));
+                                                            transform-origin: var(--origin-x) var(--origin-y);
+                                                        }
+                                                    </style>
+                                                    <style class="transform-overrides-vars">
+
+                                                    </style>
+
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fe-block fe-block-e96ea33c48e777dcf75a">
+                                        <div class="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="e96ea33c48e777dcf75a" id="block-e96ea33c48e777dcf75a">
+                                            <div class="sqs-block-content">
+                                                <div class="sqs-text-block-container">
+
+                                                    <div class="sqs-html-content" data-sqsp-text-block-content>
+                                                        <h3 style="white-space:pre-wrap;">Events Series</h3>
+                                                        <pre><code>Documenting events, gatherings, and grand celebrations</code></pre>
+                                                        <p class="" style="white-space:pre-wrap;">From corporate gatherings and grand launch events to vibrant local fiestas, every moment is documented with care and precision. The focus is on preserving the atmosphere, the people, and the key highlights in a polished, professional visual narrative.</p>
+                                                    </div>
+
+
+
+                                                    <style id="container-styles">
+                                                        #block-e96ea33c48e777dcf75a {
+
+                                                            --stroke-style: none;
+                                                            --stroke-thickness: 6px;
+
+
+
+
+
+
+                                                            --tweak-text-block-background-color: initial;
+
+                                                        }
+
+                                                        #block-e96ea33c48e777dcf75a .sqs-html-content {
+
+                                                            --tweak-text-block-padding: 6% 6% 6% 6%;
+                                                            --tweak-text-block-padding: initial;
+                                                        }
+
+                                                        .fe-block-e96ea33c48e777dcf75a {
+                                                            mix-blend-mode: var(--tweak-text-block-blend);
+                                                            border-radius: var(--tweak-text-block-radius);
+                                                        }
+
+
+
+                                                        .fe-block-e96ea33c48e777dcf75a {
+                                                            --tweak-text-block-radius: 0px 0px 0px 0px;
+                                                        }
+
+
+
+                                                        .fe-block-e96ea33c48e777dcf75a {
+                                                            --tweak-text-block-blend: normal;
+                                                        }
+
+
+                                                        .fe-block-e96ea33c48e777dcf75a {
+                                                            --blur-value: blur(15px);
+                                                        }
+                                                    </style>
+
+                                                    <style id="override-container-styles">
+                                                        @media screen and (max-width: 767px) {
+
+
+
+                                                            #block-e96ea33c48e777dcf75a {}
+                                                        }
+
+
+                                                        @media screen and (max-width: 767px) {
+                                                            #block-e96ea33c48e777dcf75a .sqs-html-content {}
+                                                        }
+
+                                                        @media screen and (max-width: 767px) {}
+                                                    </style>
+
+                                                    <style class="transform-overrides-vars">
+
+                                                    </style>
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fe-block fe-block-e3b46eaf25856d152c05">
+                                        <div class="sqs-block accordion-block sqs-block-accordion" data-blend-mode="normal" data-block-type="69" data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;" data-sqsp-block="accordion" id="block-e3b46eaf25856d152c05">
+                                            <div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <ul class="accordion-items-container" data-should-allow-multiple-open-items="false" data-is-divider-enabled="true" data-is-first-divider-visible="true" data-is-last-divider-visible="true" data-is-expanded-first-item="false" data-accordion-title-alignment="left" data-accordion-description-alignment="left" data-accordion-description-placement="left" data-accordion-icon-placement="right">
+
+                                                    <li class="accordion-item">
+
+
+
+                                                        <div class="accordion-divider accordion-divider--top" aria-hidden="true" style="
+              height: 1px;
+              opacity: 1;
+            " data-sqsp-accordion-block-divider></div>
+
+
+
+                                                        <p class="
+          accordion-item__title-wrapper
+          
+          
+          
+        " role="heading" aria-level="3" data-sqsp-accordion-block-item-title>
+                                                            <button class="accordion-item__click-target" aria-expanded="false" style="
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 0px;
+            padding-right: 0px;
+          ">
+                                                                <span class="accordion-item__title" style="
+              
+
+              
+                padding-right: 14px;
+              
+            ">
+                                                                    Package 01
+                                                                </span>
+                                                                <div class="accordion-icon-container" data-is-open="false" aria-hidden="true" style="
+              height: 14px;
+              width: 14px;
+            ">
+
+                                                                    <div class="arrow-container">
+                                                                        <div class="arrow" style="
+                    border-width: 1px;
+                  "></div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </button>
+                                                        </p>
+                                                        <div class="accordion-item__dropdown" role="region">
+                                                            <div class="
+            accordion-item__description
+            
+            
+            
+          " style="
+            padding-top: 0px;
+            padding-bottom: 30px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            
+            
+            min-width: 70%;
+            max-width: 300px;
+          " data-sqsp-accordion-block-item-description>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Events Series Includes:</strong></p>
+                                                                <ul data-rte-list="true">
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Pre-wedding consultation to refine creative direction</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Expert timeline assistance for natural, unhurried coverage</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Thoughtful curation and fine-art editing in my signature style</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Private online gallery and archival-quality print options</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Average investment begins at $6,000.</p>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-divider" aria-hidden="true" style="
+            height: 1px;
+            opacity: 1;
+          " data-sqsp-accordion-block-divider></div>
+
+
+                                                    </li>
+
+                                                    <li class="accordion-item">
+
+
+
+
+
+                                                        <p class="
+          accordion-item__title-wrapper
+          
+          
+          
+        " role="heading" aria-level="3" data-sqsp-accordion-block-item-title>
+                                                            <button class="accordion-item__click-target" aria-expanded="false" style="
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 0px;
+            padding-right: 0px;
+          ">
+                                                                <span class="accordion-item__title" style="
+              
+
+              
+                padding-right: 14px;
+              
+            ">
+                                                                    Package 02
+                                                                </span>
+                                                                <div class="accordion-icon-container" data-is-open="false" aria-hidden="true" style="
+              height: 14px;
+              width: 14px;
+            ">
+
+                                                                    <div class="arrow-container">
+                                                                        <div class="arrow" style="
+                    border-width: 1px;
+                  "></div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </button>
+                                                        </p>
+                                                        <div class="accordion-item__dropdown" role="region">
+                                                            <div class="
+            accordion-item__description
+            
+            
+            
+          " style="
+            padding-top: 0px;
+            padding-bottom: 30px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            
+            
+            min-width: 70%;
+            max-width: 300px;
+          " data-sqsp-accordion-block-item-description>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;"><strong>Each Events Series Includes:</strong></p>
+                                                                <ul data-rte-list="true">
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Full-day coverage with second photographer (custom-tailored to your timeline)</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Pre-wedding consultation to refine creative direction</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Expert timeline assistance for natural, unhurried coverage</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Thoughtful curation and fine-art editing in my signature style</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Private online gallery and archival-quality print options</p>
+                                                                    </li>
+                                                                </ul>
+                                                                <p data-rte-preserve-empty="true" style="white-space:pre-wrap;">Average investment begins at $6,000.</p>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-divider" aria-hidden="true" style="
+            height: 1px;
+            opacity: 1;
+          " data-sqsp-accordion-block-divider></div>
+
+
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fe-block fe-block-ecc6fa93f63977db7edd">
+                                        <div class="sqs-block website-component-block sqs-block-website-component sqs-block-button button-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/4df0bd5e-8e61-410a-a35e-685b3b5718b0_787/website.components.button.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.button/4df0bd5e-8e61-410a-a35e-685b3b5718b0_787/website.components.button.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.button" data-sqsp-block="button" data-website-component-id="ecc6fa93f63977db7edd" id="block-ecc6fa93f63977db7edd">
+                                            <div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+                                                <div class="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--left " data-animation-role="button" data-button-size="medium" data-button-type="primary">
+                                                    <a href="contact.html" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" data-sqsp-button>
+                                                        Inquire Now
+                                                    </a>
+
+
+
+
+
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+                                                <style>
+                                                    #block-ecc6fa93f63977db7edd {
+                                                        --sqs-block-content-flex: 0;
+                                                    }
+                                                </style>
+                                                <style class="transform-overrides-vars">
+
+                                                </style>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="section-divider-display" style="
+    --stroke-thickness: 1px;
+    --stroke-dasharray: 0;
+    --stroke-linecap: square;
+    
+      
+    
+  ">
+                        <style>
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"] {
+                                padding-bottom: var(--divider-height);
+                                z-index: var(--z-index);
+                            }
+
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"] .background-pause-button {
+                                bottom: calc(14px + var(--divider-height));
+                            }
+
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"] .section-divider-svg-clip {
+                                display: none;
+                            }
+
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) {
+                                padding-bottom: calc(var(--sqs-site-gutter) + var(--divider-height));
+                            }
+
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) .section-background {
+                                bottom: calc(var(--sqs-site-gutter) + var(--divider-height));
+                            }
+
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"] .section-divider-block {
+                                height: var(--divider-height);
+                            }
+                        </style>
+
+                        <style data-section-divider-style>
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"] {
+                                padding-bottom: 6vw;
+                            }
+
+                            .has-section-divider[data-section-id="69078c3403ec5f696617c1f9"].background-width--inset:not(.content-collection):not(.gallery-section):not(.user-items-list-section) {
+                                padding-bottom: calc(var(--sqs-site-gutter) + 6vw);
+                            }
+                        </style>
+                        <div class="section-divider-block"></div>
+                        <svg class="section-divider-svg-clip">
+                            <clipPath id="section-divider-69078c3403ec5f696617c1f9" clipPathUnits="objectBoundingBox">
+                                <path class="section-divider-clip" d="M0,0" />
+                            </clipPath>
+                        </svg>
+                        <svg class="section-divider-svg-stroke" viewBox="0 0 1 1" preserveAspectRatio="none">
+                            <path class="section-divider-stroke" d="M0,0" vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+
+                </section>
+
 
 
 
