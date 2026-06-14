@@ -1790,6 +1790,195 @@
     <!-- End of Squarespace Headers -->
 
 
+
+    <!-- Custom Flexbox Overrides for Services Series Sections -->
+    <style>
+        .fe-690785ab0cce39185309c2e1, 
+        .fe-69078b5f65edbb5a87e3d3cb, 
+        .fe-69078c3403ec5f696617c1f5 {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 0px !important;
+            padding: 0px !important;
+            box-sizing: border-box !important;
+            min-height: auto !important;
+            height: auto !important;
+            position: relative !important;
+        }
+
+        /* Mobile border bottom rules to maintain grid division */
+        @media (max-width: 767px) {
+            /* Border between top element (image) and bottom element (text) inside each section */
+            .fe-690785ab0cce39185309c2e1 .fe-block-847cecf83318e38b2a85, /* Wedding Image */
+            .fe-69078b5f65edbb5a87e3d3cb .fe-block-609e9eb14bef375c7df7, /* Debut Image */
+            [data-section-id="69078c3403ec5f696617c1f6"] .fe-block-6b7889dbc171e1281485, /* Kids Image */
+            [data-section-id="69078c3403ec5f696617c1f9"] .fe-block-e87889dbc171e1281485 { /* Events Image */
+                border-bottom: 1px solid #000000 !important;
+            }
+        }
+
+        /* Draw a perfectly centered vertical divider line on desktop */
+        @media (min-width: 768px) {
+            .fe-690785ab0cce39185309c2e1::after, 
+            .fe-69078b5f65edbb5a87e3d3cb::after, 
+            .fe-69078c3403ec5f696617c1f5::after {
+                content: "" !important;
+                position: absolute !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                left: 50% !important;
+                width: 1px !important;
+                background-color: #000000 !important;
+                z-index: 10 !important;
+                pointer-events: none !important;
+            }
+
+            .fe-690785ab0cce39185309c2e1 { /* Wedding: Image Left, Text Right */
+                flex-direction: row !important;
+                align-items: stretch !important;
+            }
+
+            [data-section-id="69078c3403ec5f696617c1f6"] .fe-69078c3403ec5f696617c1f5 { /* Kids: Image Left, Text Right */
+                flex-direction: row !important;
+                align-items: stretch !important;
+            }
+
+            .fe-69078b5f65edbb5a87e3d3cb { /* Debut: Text Left, Image Right */
+                flex-direction: row-reverse !important;
+                align-items: stretch !important;
+            }
+
+            [data-section-id="69078c3403ec5f696617c1f9"] .fe-69078c3403ec5f696617c1f5 { /* Events: Text Left, Image Right */
+                flex-direction: row-reverse !important;
+                align-items: stretch !important;
+            }
+        }
+
+        /* Ensure the image blocks size correctly and behave as relative items */
+        .fe-690785ab0cce39185309c2e1 .fe-block-847cecf83318e38b2a85,
+        .fe-69078b5f65edbb5a87e3d3cb .fe-block-609e9eb14bef375c7df7,
+        .fe-69078c3403ec5f696617c1f5 .fe-block-6b7889dbc171e1281485,
+        .fe-69078c3403ec5f696617c1f5 .fe-block-e87889dbc171e1281485 {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+            transform: none !important;
+            aspect-ratio: 1 / 1 !important; /* Default to square ratio for mobile */
+        }
+
+        /* Debut image aspect-ratio override matching original mobile layout */
+        .fe-69078b5f65edbb5a87e3d3cb .fe-block-609e9eb14bef375c7df7 {
+            aspect-ratio: 1.1 / 1 !important;
+        }
+
+        .fe-690785ab0cce39185309c2e1 .fe-block-847cecf83318e38b2a85 .sqs-block,
+        .fe-69078b5f65edbb5a87e3d3cb .fe-block-609e9eb14bef375c7df7 .sqs-block,
+        .fe-69078c3403ec5f696617c1f5 .fe-block-6b7889dbc171e1281485 .sqs-block,
+        .fe-69078c3403ec5f696617c1f5 .fe-block-e87889dbc171e1281485 .sqs-block,
+        .fe-690785ab0cce39185309c2e1 .fe-block-847cecf83318e38b2a85 .sqs-block-content,
+        .fe-69078b5f65edbb5a87e3d3cb .fe-block-609e9eb14bef375c7df7 .sqs-block-content,
+        .fe-69078c3403ec5f696617c1f5 .fe-block-6b7889dbc171e1281485 .sqs-block-content,
+        .fe-69078c3403ec5f696617c1f5 .fe-block-e87889dbc171e1281485 .sqs-block-content {
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        @media (min-width: 768px) {
+            .fe-690785ab0cce39185309c2e1 .fe-block-847cecf83318e38b2a85,
+            .fe-69078b5f65edbb5a87e3d3cb .fe-block-609e9eb14bef375c7df7,
+            .fe-69078c3403ec5f696617c1f5 .fe-block-6b7889dbc171e1281485,
+            .fe-69078c3403ec5f696617c1f5 .fe-block-e87889dbc171e1281485 {
+                width: 50% !important;
+                flex: 0 0 50% !important;
+                height: auto !important;
+                aspect-ratio: auto !important; /* Let height be defined by stretch layout on desktop */
+            }
+
+            /* Increase height of all four package sections on desktop */
+            .fe-690785ab0cce39185309c2e1,
+            .fe-69078b5f65edbb5a87e3d3cb,
+            .fe-69078c3403ec5f696617c1f5 {
+                min-height: 80vh !important;
+            }
+        }
+
+        /* Content wrapper styles grouping text + button */
+        .fe-block-content-wrapper {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 24px !important;
+            width: 100% !important;
+            padding: 40px 24px !important; /* padding for mobile */
+            box-sizing: border-box !important;
+            justify-content: center !important;
+        }
+
+        @media (min-width: 768px) {
+            .fe-block-content-wrapper {
+                width: 50% !important;
+                flex: 0 0 50% !important;
+                padding: 80px 10% !important; /* Generous padding on desktop like grid */
+                align-items: flex-start !important;
+            }
+        }
+
+        /* Make children of content wrapper stack normally and reset grid placement rules */
+        .fe-block-content-wrapper > .fe-block {
+            width: 100% !important;
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+            transform: none !important;
+        }
+
+        /* Hide duplicate vertical border shape blocks */
+        .fe-block-yui_3_17_2_1_1768821774726_10398,
+        .fe-block-yui_3_17_2_1_1768821774726_11452,
+        .fe-block-yui_3_17_2_1_1768821774726_12446,
+        .fe-block-yui_3_17_2_1_1768821774726_1244e {
+            display: none !important;
+        }
+
+        /* Style the Know More buttons and animated arrow */
+        .sqs-block-button-element,
+        .sqs-block-button-element:hover,
+        .sqs-block-button-element:focus,
+        .sqs-block-button-element:active {
+            text-decoration: none !important;
+            border-bottom: none !important;
+            border-bottom-width: 0 !important;
+            background-image: none !important;
+            box-shadow: none !important;
+        }
+
+        .sqs-block-button-element {
+            position: relative !important;
+            transition: all 0.3s ease !important;
+            display: inline-flex !important;
+            align-items: center !important;
+        }
+
+        /* Animated underline under the text */
+        .sqs-block-button-element::before {
+            content: "" !important;
+            position: absolute !important;
+            bottom: -2px !important; /* Spacing below the text */
+            left: 0 !important;
+            right: 0 !important; /* Spans full width of the text */
+            height: 1px !important;
+            background-color: currentColor !important;
+            transform: scaleX(0) !important;
+            transform-origin: left !important;
+            transition: transform 0.3s ease !important;
+        }
+
+        .sqs-block-button-element:hover::before {
+            transform: scaleX(1) !important;
+        }
+    </style>
 </head>
 
 <body id="collection-690785ab0cce39185309c2d4" class="
@@ -4649,6 +4838,7 @@ system_desktop
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="fe-block-content-wrapper">
                                     <div class="fe-block fe-block-e0859f8011ff3f237010">
                                         <div class="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="e0859f8011ff3f237010" id="block-e0859f8011ff3f237010">
                                             <div class="sqs-block-content">
@@ -4749,7 +4939,7 @@ system_desktop
 
                                                 <div class="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--left " data-animation-role="button" data-button-size="medium" data-button-type="primary">
                                                     <a href="contact.html" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" data-sqsp-button target="_blank">
-                                                        Inquire Now
+                                                        Know More
                                                     </a>
 
 
@@ -4779,6 +4969,7 @@ system_desktop
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
 
@@ -5504,6 +5695,7 @@ system_desktop
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="fe-block-content-wrapper">
                                     <div class="fe-block fe-block-9099932fbe3795be7b54">
                                         <div class="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="9099932fbe3795be7b54" id="block-9099932fbe3795be7b54">
                                             <div class="sqs-block-content">
@@ -5604,7 +5796,7 @@ system_desktop
 
                                                 <div class="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--left " data-animation-role="button" data-button-size="medium" data-button-type="primary">
                                                     <a href="contact.html" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" data-sqsp-button>
-                                                        Inquire Now
+                                                        Know More
                                                     </a>
 
 
@@ -5634,6 +5826,7 @@ system_desktop
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
 
@@ -6359,6 +6552,7 @@ system_desktop
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="fe-block-content-wrapper">
                                     <div class="fe-block fe-block-796ea33c48e777dcf75a">
                                         <div class="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="796ea33c48e777dcf75a" id="block-796ea33c48e777dcf75a">
                                             <div class="sqs-block-content">
@@ -6459,7 +6653,7 @@ system_desktop
 
                                                 <div class="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--left " data-animation-role="button" data-button-size="medium" data-button-type="primary">
                                                     <a href="contact.html" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" data-sqsp-button>
-                                                        Inquire Now
+                                                        Know More
                                                     </a>
 
 
@@ -6489,6 +6683,7 @@ system_desktop
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
 
@@ -7195,6 +7390,7 @@ system_desktop
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="fe-block-content-wrapper">
                                     <div class="fe-block fe-block-e96ea33c48e777dcf75a">
                                         <div class="sqs-block website-component-block sqs-block-website-component sqs-block-html html-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.html/98e2e8f9-67d5-4d6c-a400-ee02c06b1b00_617/website.components.html.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.html" data-sqsp-block="text" data-website-component-id="e96ea33c48e777dcf75a" id="block-e96ea33c48e777dcf75a">
                                             <div class="sqs-block-content">
@@ -7295,7 +7491,7 @@ system_desktop
 
                                                 <div class="sqs-block-button-container sqs-button-block-container-system_desktop sqs-block-button-container--left " data-animation-role="button" data-button-size="medium" data-button-type="primary">
                                                     <a href="contact.html" class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" data-sqsp-button>
-                                                        Inquire Now
+                                                        Know More
                                                     </a>
 
 
@@ -7325,6 +7521,7 @@ system_desktop
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </div>
 
